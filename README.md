@@ -1,4 +1,5 @@
-# [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
+# This is my GitHub Page which based on open source project [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
+# thanks for  [YAMT - Yet Another Minimal Theme](https://yamt.netlify.app/)
 ![](https://badgen.net/rubygems/dt/jekyll-yamt)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/PandaSekh/Jekyll-YAMT/issues)
 ![GitHub forks](https://img.shields.io/github/forks/PandaSekh/Jekyll-YAMT?label=Fork%20it%21&style=social)
