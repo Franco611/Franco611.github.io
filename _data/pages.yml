@@ -3,3 +3,4 @@ pages:
   - {name: 'Contact', url: 'contact.html'}
   - {name: 'Archive', url: 'archive.html'}
   - {name: 'Franco Blog', url: 'https://franco611.github.io'}
+  - {name: 'new-page', url: 'new-page.html'}
