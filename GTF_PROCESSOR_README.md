@@ -16,10 +16,18 @@ For GTF files, we need to copy the `gene_id "evm.TU.Chr01.1";` from column 9 to 
 python3 process_gtf.py input.gtf output.gtf
 ```
 
+### 选项 (Options)
+
+```bash
+# 跳过已有 gene_name 的行 (Skip lines that already have gene_name)
+python3 process_gtf.py input.gtf output.gtf --skip-if-exists
+```
+
 ### 参数说明 (Parameters)
 
 - `input.gtf`: 输入的GTF文件路径 (Input GTF file path)
 - `output.gtf`: 输出的GTF文件路径 (Output GTF file path)
+- `--skip-if-exists`: 可选参数，如果属性中已存在 gene_name，则跳过该行 (Optional flag to skip adding gene_name if it already exists)
 
 ### 示例 (Example)
 
@@ -46,8 +54,9 @@ Chr01	EVM	mRNA	215447	215758	.	-	.	gene_id "evm.TU.Chr01.1"; transcript_id "evm.
 
 1. 自动提取每行第9列中的 `gene_id` 值 (Automatically extracts `gene_id` value from column 9)
 2. 在第9列末尾添加 `gene_name` 属性 (Appends `gene_name` attribute to the end of column 9)
-3. 保持GTF文件格式完整性 (Maintains GTF file format integrity)
-4. 处理空行和注释行 (Handles empty lines and comments)
+3. 支持跳过已有 `gene_name` 的行 (Supports skipping lines that already have `gene_name`)
+4. 保持GTF文件格式完整性 (Maintains GTF file format integrity)
+5. 处理空行和注释行 (Handles empty lines and comments)
 
 ## 要求 (Requirements)
 
