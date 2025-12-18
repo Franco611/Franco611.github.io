@@ -9,3 +9,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+# GTF processor output files
+*_output.gtf
+sample_output.gtf
+test_edge_output.gtf

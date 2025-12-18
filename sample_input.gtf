@@ -1,0 +1,6 @@
+Chr01	EVM	gene	215447	215758	.	-	.	gene_id "evm.TU.Chr01.1"; ID "evm.TU.Chr01.1";; gene_name "evm.TU.Chr01.1"; Name "EVM_prediction_Chr01.1";
+Chr01	EVM	mRNA	215447	215758	.	-	.	gene_id "evm.TU.Chr01.1"; transcript_id "evm.model.Chr01.1"; ID "evm.model.Chr01.1"; Name "EVM_prediction_Chr01.1";
+Chr01	EVM	exon	215447	215758	.	-	.	gene_id "evm.TU.Chr01.1"; transcript_id "evm.model.Chr01.1"; ID "evm.model.Chr01.1.exon1";
+Chr01	EVM	CDS	215447	215758	.	-	0	gene_id "evm.TU.Chr01.1"; transcript_id "evm.model.Chr01.1"; ID "cds.evm.model.Chr01.1";
+Chr02	EVM	gene	315447	315758	.	+	.	gene_id "evm.TU.Chr02.1"; ID "evm.TU.Chr02.1"; Name "EVM_prediction_Chr02.1";
+Chr02	EVM	mRNA	315447	315758	.	+	.	gene_id "evm.TU.Chr02.1"; transcript_id "evm.model.Chr02.1"; ID "evm.model.Chr02.1";
