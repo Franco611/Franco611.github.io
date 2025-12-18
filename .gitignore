@@ -15,12 +15,4 @@ _site/
 *_output*.gtf
 *_test.gtf
 *_out.gtf
-sample_output.gtf
-test_edge_output.gtf
-test_output1.gtf
-test_output2.gtf
-final_test.gtf
-verification_test.gtf
-final_verification.gtf
-test_whitespace.gtf
-test_whitespace_out.gtf
+demo_*.gtf
