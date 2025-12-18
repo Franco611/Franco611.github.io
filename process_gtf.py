@@ -97,7 +97,8 @@ def process_gtf_file(input_file, output_file, skip_if_exists=False):
         skip_if_exists: If True, skip adding gene_name if it already exists
     """
     try:
-        with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
+        with open(input_file, 'r', encoding='utf-8') as infile, \
+             open(output_file, 'w', encoding='utf-8') as outfile:
             for line in infile:
                 processed_line = process_gtf_line(line, skip_if_exists)
                 outfile.write(processed_line)
@@ -105,8 +106,14 @@ def process_gtf_file(input_file, output_file, skip_if_exists=False):
     except FileNotFoundError:
         print(f"Error: Input file '{input_file}' not found.")
         sys.exit(1)
-    except Exception as e:
-        print(f"Error processing file: {e}")
+    except PermissionError:
+        print(f"Error: Permission denied when accessing files.")
+        sys.exit(1)
+    except UnicodeDecodeError:
+        print(f"Error: Unable to decode file. Please ensure it's a valid UTF-8 text file.")
+        sys.exit(1)
+    except OSError as e:
+        print(f"Error: OS error occurred: {e}")
         sys.exit(1)
 
 

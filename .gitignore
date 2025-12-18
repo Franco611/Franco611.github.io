@@ -13,8 +13,10 @@ _site/
 # GTF processor output files
 *_output.gtf
 *_output*.gtf
+*_test.gtf
 sample_output.gtf
 test_edge_output.gtf
 test_output1.gtf
 test_output2.gtf
 final_test.gtf
+verification_test.gtf
