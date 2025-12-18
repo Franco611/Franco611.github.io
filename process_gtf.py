@@ -78,8 +78,9 @@ def process_gtf_line(line, skip_if_exists=False):
         # Append gene_name with the gene_id value to the end of attributes
         # Note: This will add gene_name even if it already exists in the middle,
         # as per the original requirement to "copy to the end"
-        if not attributes.endswith(';'):
-            attributes += ';'
+        # Use --skip-if-exists flag to avoid duplicates
+        if not attributes.rstrip().endswith(';'):
+            attributes = attributes.rstrip() + ';'
         attributes += f' gene_name "{gene_id}";'
         fields[8] = attributes
     
