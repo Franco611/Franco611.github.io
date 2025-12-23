@@ -1,0 +1,6 @@
+# This is a comment line
+Chr01	EVM	gene	215447	215758	.	-	.	gene_id "evm.TU.Chr01.1"; ID "evm.TU.Chr01.1";
+
+Chr02	EVM	gene	315447	315758	.	+	.	gene_id "evm.TU.Chr02.1"; Name "Test";
+# Another comment
+Chr03	EVM	mRNA	415447	415758	.	-	.	gene_id "evm.TU.Chr03.5"; transcript_id "test";
